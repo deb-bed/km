@@ -667,28 +667,16 @@
             blueSection.style.display = 'none';
         });
   </script>
-    <style>
-    html, body {
-        overflow-x: hidden; /* Wyłącza przewijanie w poziomie */
-    }
-</style>
-<style>
+   <style>
   html, body {
     height: 100%;            /* Pełna wysokość strony */
     margin: 0;
     padding: 0;
-    overflow: auto;          /* Umożliwia przewijanie, a pasek będzie widoczny */
-    -webkit-overflow-scrolling: touch;  /* Płynne przewijanie na urządzeniach mobilnych */
-  }
-
-  /* Dostosowanie na urządzenia mobilne, w tym Android */
-  @media (max-width: 768px) {
-    body {
-      overflow: scroll; /* Pasek przewijania będzie zawsze widoczny */
-    }
+    overflow-x: hidden;      /* Ukrywa poziomy pasek przewijania */
+    overflow-y: auto;        /* Wymusza pionowy pasek przewijania */
+    -webkit-overflow-scrolling: touch; /* Płynne przewijanie na urządzeniach mobilnych */
   }
 </style>
-
 
 </body>
 </html>
