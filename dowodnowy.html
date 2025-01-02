@@ -360,21 +360,21 @@
 
 <style>
   .dana {
-    padding: 5px; /* Zmniejszenie paddingu wewnętrznego */
-    margin: 0;
-    overflow: hidden; /* Ukrycie nadmiaru tekstu */
+    padding: 5px 10px; /* Zmniejszenie paddingu wewnętrznego sekcji, co zmniejszy boks */
+    margin: 5px 0; /* Zmniejszenie marginesów wokół sekcji */
+    width: auto; /* Automatyczna szerokość, aby dostosować się do zawartości */
   }
 
   .info {
-    font-size: 14px; /* Zmniejszenie rozmiaru czcionki w "info" */
-    margin-bottom: 8px; /* Zmniejszenie odstępu między "info" a "main" */
+    font-size: 16px; /* Rozmiar czcionki w .info pozostaje bez zmian */
+    margin-bottom: 10px; /* Odstęp między info a main pozostaje bez zmian */
   }
 
   .main {
     height: auto; /* Elementy dostosowują się do tekstu */
     line-height: 1.2em; /* Wyrównanie tekstu */
-    font-size: 13px; /* Zmniejszenie rozmiaru czcionki */
-    margin: 10px 0; /* Zmniejszenie odstępów między tekstami */
+    font-size: 15px; /* Rozmiar czcionki w .main pozostaje bez zmian */
+    margin: 15px 0; /* Odstęp między tekstami pozostaje bez zmian */
     padding: 0;
   }
 
@@ -389,6 +389,7 @@
     display: none;
   }
 </style>
+
 
 
 <a 
