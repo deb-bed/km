@@ -674,20 +674,17 @@
 </style>
 <style>
   html, body {
-    height: 100%;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
+    height: 100%;            /* Pełna wysokość strony */
+    margin: 0;
+    padding: 0;
+    overflow: auto;          /* Umożliwia przewijanie, a pasek będzie widoczny */
+    -webkit-overflow-scrolling: touch;  /* Płynne przewijanie na urządzeniach mobilnych */
   }
 
-  body {
-    scrollbar-width: thin;   /* Wymusza pasek przewijania */
-    scrollbar-color: #888 #f1f1f1; /* Ustawienia kolorów paska przewijania */
-  }
-
-  /* Zastosowanie tylko na urządzeniach mobilnych */
-  @media screen and (max-width: 768px) {
+  /* Dostosowanie na urządzenia mobilne, w tym Android */
+  @media (max-width: 768px) {
     body {
-      overflow-y: scroll;  /* Wymusza pasek przewijania na małych ekranach */
+      overflow: scroll; /* Pasek przewijania będzie zawsze widoczny */
     }
   }
 </style>
