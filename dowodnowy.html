@@ -672,16 +672,11 @@
         overflow-x: hidden; /* Wyłącza przewijanie w poziomie */
     }
 </style>
-<script>
-  // Funkcja nasłuchująca przewijania
-  window.onscroll = function() {
-    if (document.documentElement.scrollTop + window.innerHeight >= document.documentElement.scrollHeight) {
-      // Sprawdza, czy użytkownik osiągnął dolną część strony
-      window.scrollTo({ top: 0, behavior: 'smooth' }); // Płynne przewinięcie na górę
-    }
-  };
-</script>
-
+<style>
+  body {
+    overflow-y: scroll; /* Pasek przewijania w pionie */
+  }
+</style>
 
 </body>
 </html>
