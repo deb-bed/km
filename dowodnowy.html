@@ -360,30 +360,35 @@
 
 <style>
   .dana {
-    padding: 0;
+    padding: 5px; /* Zmniejszenie paddingu wewnętrznego */
     margin: 0;
     overflow: hidden; /* Ukrycie nadmiaru tekstu */
+  }
+
+  .info {
+    font-size: 14px; /* Zmniejszenie rozmiaru czcionki w "info" */
+    margin-bottom: 8px; /* Zmniejszenie odstępu między "info" a "main" */
   }
 
   .main {
     height: auto; /* Elementy dostosowują się do tekstu */
     line-height: 1.2em; /* Wyrównanie tekstu */
-    font-size: 15px; /* Rozmiar czcionki */
-    margin: 15px 0; /* Większe odstępy między tekstami */
+    font-size: 13px; /* Zmniejszenie rozmiaru czcionki */
+    margin: 10px 0; /* Zmniejszenie odstępów między tekstami */
     padding: 0;
   }
 
   .krecha {
     height: 1px; /* Cienkie linie oddzielające */
     background-color: #D3D3D3; /* Kolor linii */
-    margin: 5px 0; /* Większe odstępy między kreskami */
+    margin: 8px 0; /* Zmniejszenie odstępu między kreskami */
   }
 
   /* Ukrycie linii przed sekcją "Nazwisko rodowe" */
   #rogo .content section:first-of-type .krecha {
     display: none;
   }
-</style> 
+</style>
 
 
 <a 
